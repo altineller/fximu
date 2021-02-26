@@ -1,0 +1,16 @@
+params/imu: {
+calibration_mode: 1,
+sensor_read_rate: 400, output_rate_divider: 8,
+adaptive_gain: 1, bias_estimation: 1,
+gain_acc: 0.02, gain_mag: 0.01, bias_alpha: 0.1,
+imu_frame_id: "base_imu_link", mag_frame_id: "mag_imu_link",
+gfsr: 2, afsr: 1,
+steady_limit: 32,
+world_frame: 0,
+use_mag: 1,
+kAngularVelocityThreshold: 0.06, kAccelerationThreshold: 0.25, kDeltaAngularVelocityThreshold: 0.05,
+mag_offset_x: 27.00, mag_offset_y: 78.14, mag_offset_z: 85.36,
+mag_soft_iron_ix: 0.987, mag_soft_iron_iy: -0.040, mag_soft_iron_iz: -0.021,
+mag_soft_iron_jx: -0.040, mag_soft_iron_jy: 1.006, mag_soft_iron_jz: 0.006,
+mag_soft_iron_kx: -0.021, mag_soft_iron_ky: 0.006, mag_soft_iron_kz: 1.009
+}
