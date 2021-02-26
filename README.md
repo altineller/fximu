@@ -3,7 +3,7 @@
 This repository contains the client software for fximu. This is the only package you need to install in order to run fximu. If you want to do firmware development please look at fximu_firmware. See [HOWTO.md](HOWTO.md) on notes for operations.
 
 
-![fximu v1c](doc/fximu_v1c.png)
+![fximu v1c](doc/fximu_v1c.jpg)
 
 FXIMU utilizes a port of ROS's complementary filter on the TM4C123 MCU using the NXP semiconductor FXOS8700 accelerometer magnetometer and FXAS21002 gyro sensor.
 
