@@ -36,6 +36,7 @@ Note that rviz imu plugin is required to visualize imu data. Click Add on rviz, 
 
 Use `fx.launch` to load parameters, and launch fximu. Use `fx_viz.launch` to launch fximu and RVIZ for testing.
 
+![rviz](doc/rviz.png)
 
 #### View IMU data
 
@@ -60,3 +61,7 @@ Or
 ```
 rostopic hz /imu/mag
 ```
+
+#### If you are developing on Ubuntu
+
+ModemManager service that is default on ubuntu, probes the newly added serial ports, which keeps it busy for few second. To overcome this delay turn off the ModemManager service.
