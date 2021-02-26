@@ -1,9 +1,5 @@
 <launch>
-    <rosparam command="load" file="$(find fximu)/config/fximu_params_006.yaml" />
-    <node pkg="rosserial_python" type="serial_node.py" name="serial_node_fximu" output="screen">
-        <param name="port" value="/dev/ttyACM0"/>
-        <param name="baud" value="230400"/>
-    </node>
+    <include file="$(find fximu)/launch/fx.launch" />
     <node pkg="tf" type="static_transform_publisher" name="map_to_base_imu_link" args="0 0 0 0 0 0 /map /base_imu_link 100"/>
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fximu)/launch/rviz/fximu.rviz"/>
 </launch>

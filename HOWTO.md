@@ -62,6 +62,44 @@ Or
 rostopic hz /imu/mag
 ```
 
+#### Measure Gravity
+
+First launch FXIMU, then:
+
+```
+	roscd fximu/scripts
+	./measure_gravity.py
+```
+
+It will print the value of **gravity constant**. Make sure the FXIMU is fixed and does not move before running.Wait at least 1000 cycles for the averaging filter to converge.
+
+
+#### Measure Thresholds
+
+FXIMU detects stationary mode by using number of thresholds. Once the device is in stationary mode, it self calibrates sensor biases. To measure the thresholds for your imu follow the following procedure:
+
+```
+	roscd fximu/scripts
+	./measure.thresholds.py
+```
+
+This will print measurements, if the thresholds are exceeded. So depending on the output, change the following lines accordingly:
+
+```console
+        self.kAccelerationThreshold = 0.19
+        self.kAngularVelocityThreshold = 0.055
+        self.kDeltaAngularVelocityThreshold = 0.033
+```
+
+`kAccelerationThreshold` is the threshold for accelerometer values.
+
+`kAngularVelocityThreshold` is the threshold for the gyro values.
+
+`kDeltaAngularVelocityThreshold` is the threshold for the derivative of gyro values.
+
+Tune these manually, until the program `measure_thresholds` does not print any value.
+
+
 #### If you are developing on Ubuntu
 
 ModemManager service that is default on ubuntu, probes the newly added serial ports, which keeps it busy for few second. To overcome this delay turn off the ModemManager service.
