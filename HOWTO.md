@@ -67,8 +67,8 @@ rostopic hz /imu/mag
 First launch FXIMU, then:
 
 ```
-	roscd fximu/scripts
-	./measure_gravity.py
+roscd fximu/scripts
+./measure_gravity.py
 ```
 
 It will print the value of **gravity constant**. Make sure the FXIMU is fixed and does not move before running.Wait at least 1000 cycles for the averaging filter to converge.
@@ -79,16 +79,16 @@ It will print the value of **gravity constant**. Make sure the FXIMU is fixed an
 FXIMU detects stationary mode by using number of thresholds. Once the device is in stationary mode, it self calibrates sensor biases. To measure the thresholds for your imu follow the following procedure:
 
 ```
-	roscd fximu/scripts
-	./measure.thresholds.py
+roscd fximu/scripts
+./measure.thresholds.py
 ```
 
 This will print measurements, if the thresholds are exceeded. So depending on the output, change the following lines accordingly:
 
 ```console
-        self.kAccelerationThreshold = 0.19
-        self.kAngularVelocityThreshold = 0.055
-        self.kDeltaAngularVelocityThreshold = 0.033
+self.kAccelerationThreshold = 0.19
+self.kAngularVelocityThreshold = 0.055
+self.kDeltaAngularVelocityThreshold = 0.033
 ```
 
 `kAccelerationThreshold` is the threshold for accelerometer values.
