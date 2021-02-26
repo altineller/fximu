@@ -1,6 +1,6 @@
 ### ROS Software for FXIMU imu sensor board
 
-This repository contains the client software for fximu. This is the only package you need to install in order to run fximu. If you want to do firmware development please look at fximu_firmware.
+This repository contains the client software for fximu. This is the only package you need to install in order to run fximu. If you want to do firmware development please look at fximu_firmware. See [HOWTO.md](HOWTO.md) on notes for operations.
 
 
 ![fximu v1c](doc/fximu_v1c.jpg)
@@ -74,15 +74,15 @@ The device will report about the status of the calibration on the console output
 | mag\_offset\_x | Magnetometer offset x
 | mag\_offset\_y | Magnetometer offset y
 | mag\_offset\_z | Magnetometer offset z
-| mag\_soft\_iron\_ix | SoftIron ix
-| mag\_soft\_iron\_iy | SoftIron iy
-| mag\_soft\_iron\_iz | SoftIron iz
-| mag\_soft\_iron\_jx | SoftIron jx
-| mag\_soft\_iron\_jy | SoftIron jy
-| mag\_soft\_iron\_jz | SoftIron jz
-| mag\_soft\_iron\_kx | SoftIron kz
-| mag\_soft\_iron\_ky | SoftIron ky
-| mag\_soft\_iron\_kz | SoftIron kz
+| mag\_soft\_iron\_ix | Soft iron matrix ix
+| mag\_soft\_iron\_iy | Soft iron matrix iy
+| mag\_soft\_iron\_iz | Soft iron matrix iz
+| mag\_soft\_iron\_jx | Soft iron matrix jx
+| mag\_soft\_iron\_jy | Soft iron matrix jy
+| mag\_soft\_iron\_jz | Soft iron matrix jz
+| mag\_soft\_iron\_kx | Soft iron matrix kz
+| mag\_soft\_iron\_ky | Soft iron matrix ky
+| mag\_soft\_iron\_kz | Soft iron matrix kz
 | imu\_frame\_id | `frame_id` for `Imu` message
 | mag\_frame\_id | `frame_id` for `MagneticField` message
 
@@ -128,9 +128,7 @@ Adjust these values until you have the green light, when the sensor is stable.
 
 The `mag_offset` and `mag_soft_iron` parameters should be filled with data from your calibration software. Sensor board will auto correct for hard and soft iron errors.
 
-See [CALIBRATION.md](https://github.com/altineller/fximu2/blob/master/CALIBRATION.md) for details.
-
-See [HOWTO.md](https://github.com/altineller/fximu2/blob/master/HOWTO.md) on notes for operations.
+See [CALIBRATION.md](CALIBRATION.md) for details.
 
 
 ### Credits
@@ -146,10 +144,6 @@ _Melih Karakelle_ for advice on the development of the circuit.
 ### TODO
 
 - Auxillary magnetometer input. The hardware has an extra i2c port, which an external sensor could be use to further correct output values.
-
-
-
-
 
 
 ---
