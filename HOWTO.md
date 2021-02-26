@@ -97,7 +97,7 @@ self.kDeltaAngularVelocityThreshold = 0.033
 
 `kDeltaAngularVelocityThreshold` is the threshold for the derivative of gyro values.
 
-Tune these manually, until the program `measure_thresholds` does not print any value.
+Tune these manually, until the program `measure_thresholds` does not produce any output.
 
 
 #### If you are developing on Ubuntu
