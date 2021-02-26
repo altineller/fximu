@@ -9,8 +9,8 @@ steady_limit: 32,
 world_frame: 0,
 use_mag: 1,
 kAngularVelocityThreshold: 0.06, kAccelerationThreshold: 0.25, kDeltaAngularVelocityThreshold: 0.075,
-mag_offset_x: -11.04, mag_offset_y: -41.11, mag_offset_z: -128.65,
-mag_soft_iron_ix: 0.982, mag_soft_iron_iy: -0.064, mag_soft_iron_iz: -0.023,
-mag_soft_iron_jx: -0.064, mag_soft_iron_jy: 0.998, mag_soft_iron_jz: 0.022,
-mag_soft_iron_kx: -0.023, mag_soft_iron_ky: 0.022, mag_soft_iron_kz: 1.026
+mag_offset_x: 22.63, mag_offset_y: -27.74, mag_offset_z: -78.66,
+mag_soft_iron_ix: 0.980, mag_soft_iron_iy: -0.025, mag_soft_iron_iz: 0.010,
+mag_soft_iron_jx: -0.025, mag_soft_iron_jy: 0.994, mag_soft_iron_jz: 0.024,
+mag_soft_iron_kx: 0.010, mag_soft_iron_ky: 0.024, mag_soft_iron_kz: 1.029
 }
