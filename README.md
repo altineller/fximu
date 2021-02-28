@@ -130,6 +130,19 @@ The `mag_offset` and `mag_soft_iron` parameters should be filled with data from 
 
 See [CALIBRATION.md](CALIBRATION.md) for details.
 
+### Leds
+
+The device is equipped with a red and green led.
+
+Opon reset, the device will blink green first, then red.
+
+If loading one of the parameters fails for `calibration_mode=2` or `calibration_mode=3`, FXIMU will be disabled, and the red led will blink long.
+
+During normal operation, if ROS connection is active, red led will turn on faintly, depending on your loop speed.
+
+If the device is at steady state, then green led will turn on faintly, indicating that the device is on stationary state.
+
+
 
 ### Credits
 

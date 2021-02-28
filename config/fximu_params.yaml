@@ -5,7 +5,6 @@ adaptive_gain: 1, bias_estimation: 1,
 gain_acc: 0.02, gain_mag: 0.01, bias_alpha: 0.1,
 imu_frame_id: "base_imu_link", mag_frame_id: "mag_imu_link",
 gfsr: 2, afsr: 1,
-steady_limit: 32,
 world_frame: 0,
 use_mag: 1,
 kAngularVelocityThreshold: 0.06, kAccelerationThreshold: 0.25, kDeltaAngularVelocityThreshold: 0.05
