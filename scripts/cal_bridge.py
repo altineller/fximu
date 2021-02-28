@@ -23,7 +23,7 @@ def callback(msg):
 
 def cal_bridge():
     rospy.init_node('cal_bridge', anonymous=True)
-    rospy.Subscriber('/imu/array', Int16MultiArray, callback)
+    rospy.Subscriber('/imu/raw', Int16MultiArray, callback)
     rospy.spin()
 
 

@@ -1,5 +1,5 @@
 params/imu: {
-calibration_mode: 0,
+calibration_mode: 2,
 sensor_read_rate: 100, output_rate_divider: 2,
 adaptive_gain: 1, bias_estimation: 1,
 gain_acc: 0.02, gain_mag: 0.01, bias_alpha: 0.1,

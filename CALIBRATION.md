@@ -1,6 +1,6 @@
 ### FXIMU Calibration
 
-When the `calibration_mode` is set to `1` in the fximu_params.yaml file, the unit outputs raw sensor values at `/imu/array` topic.
+When the `calibration_mode` is set to `1` in the fximu_params.yaml file, the unit outputs raw sensor values at `/imu/raw` topic.
 
 The complementary filter is not initialized, and the hard iron and soft iron corrections are not processed, but device is configured according to `sensor_read_rate`, `output_rate_divider`, `gfsr`, and `afsr`on the yaml file.
 
@@ -12,19 +12,21 @@ The complementary filter is not initialized, and the hard iron and soft iron cor
 
 2. Run `roslaunch fximu fx.launch` to launch rosserial.
 
-3. Run `rostopic echo /imu/array` to verify raw data is being published, and device is in calibration mode.
+3. Run `rostopic echo /imu/raw` to verify raw data is being published, and device is in calibration mode.
 
 4. Run `socat.sh` provided in scripts directory. This will create `/dev/ttyCAL0` and `/dev/ttyCAL1` virtual ports.
 
 5. Run `perms.sh` provided in the scripts directory. This will fix the permissions of newly created devices.
 
-6. Run `cal_bridge.py` program provided in the scripts directory. This python program will read data from `/imu/array` topic, and then send those values to `/dev/ttyCAL0`, which will be forwarded to `/dev/ttyCAL1` by socat, as plaintext raw values.
+6. Run `cal_bridge.py` program provided in the scripts directory. This python program will read data from `/imu/raw` topic, and then send those values to `/dev/ttyCAL0`, which will be forwarded to `/dev/ttyCAL1` by socat, as plaintext raw values.
 
 7. Verify that the calibration system is running: `screen /dev/ttyCAL1 115200` you should see values running as:
 
 > Raw:-73,2054,120,22,-17,51,232,631,277
 
 To quit screen press `CTRL-A` and `\` keys.
+
+#### [TODO: /imu/raw explanation]
 
 #### Important
 

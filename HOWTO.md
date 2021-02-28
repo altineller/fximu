@@ -34,7 +34,9 @@ Note that rviz imu plugin is required to visualize imu data. Click Add on rviz, 
 
 #### Launch files
 
-Use `fx.launch` to load parameters, and launch fximu. Use `fx_viz.launch` to launch fximu and RVIZ for testing.
+[TODO: add more about launch files in readme.md]
+
+Use `fximu.launch` to load parameters and launch FXIMU. Use `fxviz.launch` to launch FXIMU and RVIZ displaying orientation.
 
 ![rviz](doc/rviz.png)
 
@@ -61,6 +63,15 @@ Or
 ```
 rostopic hz /imu/mag
 ```
+
+
+#### Plot IMU data
+
+[TODO]
+
+#### Plot Magnetometer data
+
+[TODO]
 
 #### Measure Gravity
 
