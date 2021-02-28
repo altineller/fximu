@@ -1,8 +1,9 @@
 <launch>
+    <arg name="serial_device" default="/dev/ttyACM0"/>
     <rosparam command="load" file="$(find fximu)/config/fximu_params.yaml" />
     <rosparam command="load" file="$(find fximu)/config/fximu_params_000.yaml" />
     <node pkg="rosserial_python" type="serial_node.py" name="serial_node_fximu" output="screen">
-        <param name="port" value="/dev/fximu"/>
+        <param name="port" value="$(arg serial_device)"/>
         <param name="baud" value="230400"/>
     </node>
 </launch>

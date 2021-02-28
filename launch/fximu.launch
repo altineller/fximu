@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find fximu)/launch/fx.launch">
+        <arg name="serial_device" value="/dev/fximu"/>
+    </include>
+</launch>
