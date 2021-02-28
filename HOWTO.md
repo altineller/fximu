@@ -4,8 +4,8 @@
 
 #### Prerequisites
 
-sudo apt install ros-melodic-rviz-imu-plugin  
-sudo apt install socat
+sudo apt install ros-melodic-rviz-imu-plugin -y  
+sudo apt install socat -y  
 
 #### Load parameters 
 

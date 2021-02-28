@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 
-import roslib
 import rospy
-import os, pty, serial
-from sensor_msgs.msg import Imu
-from sensor_msgs.msg import MagneticField
+import serial
 from std_msgs.msg import Int16MultiArray
 
-# TODO: move to fximu package
-
 ser = serial.Serial('/dev/ttyCAL0', 115200, rtscts=True, dsrdtr=True)
+
 
 def callback(msg):
     ax = msg.data[0]
@@ -24,10 +20,12 @@ def callback(msg):
     raw_str = 'Raw:%d,%d,%d,%d,%d,%d,%d,%d,%d\r\n' % (ax, ay, az, gx, gy, gz, mx, my, mz)
     ser.write(str.encode(raw_str))
 
+
 def cal_bridge():
     rospy.init_node('cal_bridge', anonymous=True)
-    rospy.Subscriber("/imu/array", Int16MultiArray, callback)
+    rospy.Subscriber('/imu/array', Int16MultiArray, callback)
     rospy.spin()
+
 
 if __name__ == '__main__':
     cal_bridge()
