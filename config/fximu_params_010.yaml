@@ -1,6 +1,6 @@
 params/imu: {
-mag_offset_x: 18.11, mag_offset_y: -20.04, mag_offset_z: -66.62,
-mag_soft_iron_ix: 0.985, mag_soft_iron_iy: -0.014, mag_soft_iron_iz: -0.012,
-mag_soft_iron_jx: -0.014, mag_soft_iron_jy: 1.003, mag_soft_iron_jz: 0.017,
-mag_soft_iron_kx: -0.012, mag_soft_iron_ky: 0.017, mag_soft_iron_kz: 1.012
+mag_offset_x: 19.19, mag_offset_y: -19.83, mag_offset_z: -67.51,
+mag_soft_iron_ix: 0.977, mag_soft_iron_iy: -0.034, mag_soft_iron_iz: -0.014,
+mag_soft_iron_jx: -0.034, mag_soft_iron_jy: 0.992, mag_soft_iron_jz: 0.020,
+mag_soft_iron_kx: -0.014, mag_soft_iron_ky: 0.020, mag_soft_iron_kz: 1.034
 }
