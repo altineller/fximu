@@ -1,4 +1,5 @@
 params/imu: {
+kAngularVelocityThreshold: 0.06, kAccelerationThreshold: 0.35, kDeltaAngularVelocityThreshold: 0.05,
 mag_offset_x: 25.42, mag_offset_y: -34.35, mag_offset_z: -19.19,
 mag_soft_iron_ix: 0.992, mag_soft_iron_iy: -0.026, mag_soft_iron_iz: 0.0,
 mag_soft_iron_jx: -0.026, mag_soft_iron_jy: 0.996, mag_soft_iron_jz: 0.004,

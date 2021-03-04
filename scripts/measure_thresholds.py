@@ -12,9 +12,9 @@ class MeasureThresholds():
         rospy.Subscriber('/imu/data', Imu, self.sub_imu)
         rospy.loginfo('listening on /imu/data')
 
-        self.kAccelerationThreshold = 0.19
-        self.kAngularVelocityThreshold = 0.055
-        self.kDeltaAngularVelocityThreshold = 0.033
+        self.kAngularVelocityThreshold = 0.06
+        self.kAccelerationThreshold = 0.35
+        self.kDeltaAngularVelocityThreshold = 0.05
 
         self.wx_prev = 0
         self.wy_prev = 0
