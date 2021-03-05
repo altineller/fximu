@@ -26,7 +26,7 @@ The complementary filter is not initialized, and the hard iron and soft iron cor
 
 To quit screen press `CTRL-A` and `\` keys.
 
-#### [TODO: /imu/raw explanation]
+[TODO: /imu/raw explanation]
 
 #### Important
 

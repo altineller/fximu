@@ -1,11 +1,20 @@
 ### ROS Software for FXIMU imu sensor board
 
-This repository contains the client software for fximu. This is the only package you need to install in order to run fximu. If you want to do firmware development please look at fximu_firmware. See [HOWTO.md](HOWTO.md) on notes for operations.
+**This repository contains the fximu package. This is the only package you need to install in order to run fximu.**
 
+FXIMU utilizes a port of ROS's complementary filter on the TM4C123 MCU using the NXP semiconductor FXOS8700 accelerometer magnetometer and FXAS21002 gyro sensor.
 
 ![fximu v1c](doc/fximu_v1c.jpg)
 
-FXIMU utilizes a port of ROS's complementary filter on the TM4C123 MCU using the NXP semiconductor FXOS8700 accelerometer magnetometer and FXAS21002 gyro sensor.
+See [QUICKSTART](QUICK.md) for instructions on how to start the device.
+
+See [CALIBRATION](CALIBRATION.md) for instructions on calibration. The device comes calibrated, but once you mount it to your application, you might need to recalibrate it.
+
+See [HOWTO](HOWTO.md) on tips on operation.
+
+The firmware code is available at https://github.com/altineller/fximu_firmware
+
+The hardware files are available at https://github.com/altineller/fximu_hardware
 
 **It works with ROS without any problems, does not require drivers, uses standard message types, and is open source.**
 
@@ -44,7 +53,7 @@ mag_soft_iron_kx: -0.021, mag_soft_iron_ky: 0.006, mag_soft_iron_kz: 1.009
 | 3   | will use parameters from rosparam, and write them to EEPROM
 
 
-To calibrate the device, set the calibration mode to `1`. See: [CALIBRATION.md](CALIBRATION.md)
+To calibrate the device, set the calibration mode to `1`. See: [CALIBRATION](CALIBRATION.md)
 
 After the calibration values are obtained, plug them into the `fximu_params.yaml` file, and set calibration mode to `2`.
 
@@ -130,7 +139,7 @@ The `mag_offset` and `mag_soft_iron` parameters should be filled with data from 
 
 See [CALIBRATION.md](CALIBRATION.md) for details.
 
-### Leds
+### LEDS
 
 The device is equipped with a red and green led.
 
@@ -141,7 +150,6 @@ If loading one of the parameters fails for `calibration_mode=2` or `calibration_
 During normal operation, if ROS connection is active, red led will turn on faintly, depending on your loop speed.
 
 If the device is at steady state, then green led will turn on faintly, indicating that the device is on stationary state.
-
 
 
 ### Credits

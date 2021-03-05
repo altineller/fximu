@@ -1,20 +1,15 @@
 ### HOWTO
 
-**Notes for the users of the FXIMU**
-
-#### Prerequisites
-
-sudo apt install ros-noetic-rviz-imu-plugin -y  
-sudo apt install socat -y  
+**Tips on ROS for the operation of FXIMU**
 
 #### Load parameters 
 
 ```
 rosparam load config/fximu_params.yaml
+rosparam load config/fximu_params_000.yaml
 ```
 
 >Notice: roscore must be running
-
 
 #### Run rosserial
 
@@ -28,17 +23,9 @@ rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=230400
 rosrun tf static_transform_publisher 0.0 0.0 0.0 0.0 0.0 0.0 map base_imu_link 100 
 ```
 
-#### Run RVIZ
+#### Visualize with RVIZ
 
 Note that rviz imu plugin is required to visualize imu data. Click Add on rviz, then select rviz\_imu\_plugin then type 'imu/data' as topic in the visualization window.
-
-#### Launch files
-
-[TODO: add more about launch files in readme.md]
-
-Use `fximu.launch` to load parameters and launch FXIMU. Use `fxviz.launch` to launch FXIMU and RVIZ displaying orientation.
-
-![rviz](doc/rviz.png)
 
 #### View IMU data
 
