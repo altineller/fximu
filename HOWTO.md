@@ -17,6 +17,38 @@ rosparam load config/fximu_params_000.yaml
 rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=230400
 ```
 
+#### Create /dev/fximu
+
+If you are using more than one serial device, the ordering of the ports might change after reboot, so creating a symbolic link from `/dev/fximu` to actual serial port `/dev/ttyACMX` is useful. To accomplish this, first, obtain the USB serial id of your FXIMU by executing the following command:
+
+```
+udevadm info -a -n /dev/ttyACM0 | grep '{serial}'
+```
+
+It will return:
+
+```
+ATTRS{serial}=="0000000A"
+ATTRS{serial}=="0000:00:14.0"
+```
+
+In this case, the usb serial id is `0000000A`, which is a string.
+
+Create a new rules file by:
+
+```
+sudo nano /etc/udev/rules.d/99-usb-serial.rules
+```
+
+Add the following inside the file, after replacing the FXIMU usb serial id:
+
+```
+KERNEL=="ttyACM*", ATTRS{idVendor}=="1cbe", ATTRS{idProduct}=="0002", ATTRS{serial}=="0000000A", SYMLINK+="fximu"
+```
+
+Restart the computer. You will see that once the FXIMU is attached, the udev will create a symbolic link `/dev/fximu` that points to the correct serial port. After that, in your launch files you can use `/dev/fximu`
+
+
 #### Run static transform publisher for rviz
 
 ```
@@ -45,20 +77,17 @@ rostopic echo /imu/mag
 rostopic hz /imu/data
 ```
 
-Or
-  
-```
-rostopic hz /imu/mag
-```
-
-
 #### Plot IMU data
 
-[TODO]
+```
+rqt_plot /imu/data/?
+```
 
 #### Plot Magnetometer data
 
-[TODO]
+```
+rqt_plot /imu/mag/?
+```
 
 #### Measure Gravity
 
