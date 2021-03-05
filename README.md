@@ -4,7 +4,7 @@
 
 FXIMU utilizes a port of ROS's complementary filter on the TM4C123 MCU using the NXP semiconductor FXOS8700 accelerometer magnetometer and FXAS21002 gyro sensor.
 
-![fximu v1c](doc/fximu_v1c.jpg)
+![fximu v1c](https://raw.githubusercontent.com/altineller/fximu_doc/main/img/fximu_v1c.jpg)
 
 See [QUICKSTART](QUICK.md) for instructions on how to start the device.
 

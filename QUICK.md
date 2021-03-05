@@ -91,4 +91,4 @@ The FXIMU comes calibrated, and the calibration values are read from device at b
 
 If you connected successfully to the device, Press `CTRL-C` to stop, and this time run `roslaunch fxviz.launch` to run the full demo, which launches the serial connection, then launches RVIZ with custom configuration. Note that rviz imu plugin is required to visualize imu data.
 
-![rviz](doc/rviz.png)
+![rviz](https://raw.githubusercontent.com/altineller/fximu_doc/main/img/rviz.png)

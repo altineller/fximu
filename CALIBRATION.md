@@ -42,7 +42,7 @@ Compile the program by issuing `make`. If you have problems building MotionCal p
 
 You should turn the sensor until you see see red dots arranged as a sphere like in the picture below:
 
-![MotionCal](doc/calibration_screen.png)
+![MotionCal](https://raw.githubusercontent.com/altineller/fximu_doc/main/img/calibration_screen.png)
 
 Rotate the sensor in all directions until gaps are less than 1% and variance less than 2%. At this state you can get a screenshot of calibration screen, and put those values in the hard and soft iron correction matrices defined in fximu_params.yaml file.
 
