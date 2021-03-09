@@ -1,4 +1,4 @@
-**Calibration Mode**
+### Calibration Mode
 
 | Calibration Mode | Description            
 | --- | ----------------------
@@ -17,6 +17,8 @@ If the results are good enough, set calibration mode to `3`. Reconnect to fximu.
 Once parameters are written to EEPROM, you can set the calibration mode to `0`, and the device will use internal EEPROM values, and ignore the calibration values in the yaml file.
 
 The device will report about the status of the calibration on the console output.
+
+### Parameter Table
 
 | Parameter  | Description            
 | --- | ----------------------
@@ -50,27 +52,6 @@ The device will report about the status of the calibration on the console output
 | imu\_frame\_id | `frame_id` for `Imu` message
 | mag\_frame\_id | `frame_id` for `MagneticField` message
 
-
-| GFSR | Description
-| ---- | ----
-| 0    | GFSR\_2000PS
-| 1    | GFSR\_1000PS
-| 2    | GFSR\_500PS
-| 3    | GFSR\_250PS
-
-Default is `GFSR_500PS`
-
-
-| AFSR | Description
-| ---- | ----
-| 0    | AFSR\_2G	
-| 1    | AFSR\_4G
-| 2    | AFSR\_8G
-
-Default is `AFSR_4G`
-
-**For a ground based planar robot, use `GFSR_250PS` for gyro, and `AFSR_8G` for accelerometer.**
-
 The output rate will equal `sensor_read_rate` / `output_rate_divider`.
 
 Use a high sensor read rate, then divide it to get a useful output rate. The calculations are done at sensor read rate, which leads to filter converge faster.
@@ -90,3 +71,26 @@ Adjust these values until you have the green light, when the sensor is stable.
 The `mag_offset` and `mag_soft_iron` parameters should be filled with data from your calibration software. Sensor board will auto correct for hard and soft iron errors.
 
 See [CALIBRATION.md](CALIBRATION.md) for details.
+
+### GFSR
+
+| GFSR | Description
+| ---- | ----
+| 0    | GFSR\_2000PS
+| 1    | GFSR\_1000PS
+| 2    | GFSR\_500PS
+| 3    | GFSR\_250PS
+
+Default is `GFSR_500PS`
+
+### AFSR
+
+| AFSR | Description
+| ---- | ----
+| 0    | AFSR\_2G	
+| 1    | AFSR\_4G
+| 2    | AFSR\_8G
+
+Default is `AFSR_4G`
+
+**For a ground based planar robot, use `GFSR_250PS` for gyro, and `AFSR_8G` for accelerometer.**
