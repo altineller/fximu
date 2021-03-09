@@ -6,6 +6,8 @@ FXIMU utilizes a port of ROS's complementary filter on the TM4C123 MCU using the
 
 ![fximu v1c](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/fximu_v1c.jpg)
 
+#### Documentation Contents
+
 See [QUICKSTART](QUICK.md) for instructions on how to start the device.
 
 See [PARAMETERS](PARAMS.md) for description of parameters.
@@ -17,6 +19,8 @@ See [HOWTO](HOWTO.md) on tips on operation.
 The firmware code is available at https://github.com/altineller/fximu_firmware
 
 The hardware files are available at https://github.com/altineller/fximu_hardware
+
+#### Features
 
 **It works with ROS without any problems, does not require drivers, uses standard message types, and is open source.**
 
