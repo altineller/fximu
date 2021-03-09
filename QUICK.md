@@ -1,11 +1,11 @@
-#### Prerequisites
+### Prerequisites
 
 ```		
 sudo apt install ros-noetic-rviz-imu-plugin -y  
 sudo apt install socat -y  
 ```
 
-#### FXIMU package
+### FXIMU package
 
 FXIMU does not need a driver, or additional software to connect to ROS, however launch and configuration files are presented in a package for convenience to the user. 
 
