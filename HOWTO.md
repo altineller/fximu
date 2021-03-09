@@ -127,6 +127,6 @@ self.kDeltaAngularVelocityThreshold = 0.033
 Tune these manually, until the program `measure_thresholds` does not produce any output.
 
 
-#### ModemManager
+#### Disable Modem Manager
 
-ModemManager service that is default on ubuntu, probes the newly added serial ports, which keeps it busy for few second. To overcome this delay turn off the ModemManager service.
+ModemManager service that is default on ubuntu, probes the newly added serial ports, which keeps it busy for few second. To overcome this delay turn off or uninstall the ModemManager service.
