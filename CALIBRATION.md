@@ -1,5 +1,3 @@
-### FXIMU Calibration
-
 When the `calibration_mode` is set to `1` in the fximu_params.yaml file, the unit outputs raw sensor values at `/imu/raw` topic.
 
 The complementary filter is not initialized, and the hard iron and soft iron corrections are not processed, but device is configured according to `sensor_read_rate`, `output_rate_divider`, `gfsr`, and `afsr`on the yaml file.
@@ -27,8 +25,6 @@ The complementary filter is not initialized, and the hard iron and soft iron cor
 To quit screen press `CTRL-A` and `\` keys.
 
 [TODO: /imu/raw explanation]
-
-#### Important
 
 **If you are making the calibration on robot, Steps 1, 2, 3 should be done in the robot, while the 4,5,6,7 should pe performed on the host.**
 

@@ -1,4 +1,4 @@
-### Calibration Mode
+#### Calibration Mode
 
 | Calibration Mode | Description            
 | --- | ----------------------
@@ -18,7 +18,7 @@ Once parameters are written to EEPROM, you can set the calibration mode to `0`, 
 
 The device will report about the status of the calibration on the console output.
 
-### Parameter Table
+#### Parameter Table
 
 | Parameter  | Description            
 | --- | ----------------------
@@ -72,7 +72,7 @@ The `mag_offset` and `mag_soft_iron` parameters should be filled with data from 
 
 See [CALIBRATION.md](CALIBRATION.md) for details.
 
-### GFSR
+#### GFSR
 
 | GFSR | Description
 | ---- | ----
@@ -83,7 +83,7 @@ See [CALIBRATION.md](CALIBRATION.md) for details.
 
 Default is `GFSR_500PS`
 
-### AFSR
+#### AFSR
 
 | AFSR | Description
 | ---- | ----

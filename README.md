@@ -1,5 +1,7 @@
 **This repository contains the fximu package. This is the only package you need to install in order to run fximu.**
 
+### Introduction
+
 FXIMU utilizes a port of ROS's complementary filter on the TM4C123 MCU using the NXP semiconductor FXOS8700 accelerometer magnetometer and FXAS21002 gyro sensor.
 
 ![fximu v1c](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/fximu_v1c.jpg)
@@ -54,7 +56,7 @@ During normal operation, if ROS connection is active, red led will turn on faint
 If the device is at steady state, then green led will turn on faintly, indicating that the device is on stationary state.
 
 
-**Credits**
+#### Credits
 
 _Roberto G. Valenti_ for writing the original complementary filter.
 
