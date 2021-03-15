@@ -24,7 +24,20 @@ The complementary filter is not initialized, and the hard iron and soft iron cor
 
 To quit screen press `CTRL-A` and `\` keys.
 
-[TODO: /imu/raw explanation]
+Raw sensor data is output as an array of 9, as explained below:
+
+```
+data[0] = accelRD.x;
+data[1] = accelRD.y;
+data[2] = accelRD.z;
+data[3] = gyroRD.x;
+data[4] = gyroRD.y;
+data[5] = gyroRD.z;
+data[6] = magRD.x;
+data[7] = magRD.y;
+data[8] = magRD.z;
+```
+
 
 **If you are making the calibration on robot, Steps 1, 2, 3 should be done in the robot, while the 4,5,6,7 should pe performed on the host.**
 
