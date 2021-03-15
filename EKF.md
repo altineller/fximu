@@ -34,5 +34,41 @@ explain input output
 
 explain using /odometry/filtered
 
+#### Covariances
+
+Below is the relevant part in firmware code that determine the variances.
+
+```
+imu_msg.angular_velocity_covariance[0] = 0.02;
+imu_msg.angular_velocity_covariance[1] = 0;
+imu_msg.angular_velocity_covariance[2] = 0;
+imu_msg.angular_velocity_covariance[3] = 0;
+imu_msg.angular_velocity_covariance[4] = 0.02;
+imu_msg.angular_velocity_covariance[5] = 0;
+imu_msg.angular_velocity_covariance[6] = 0;
+imu_msg.angular_velocity_covariance[7] = 0;
+imu_msg.angular_velocity_covariance[8] = 0.02;
+
+imu_msg.linear_acceleration_covariance[0] = 0.04;
+imu_msg.linear_acceleration_covariance[1] = 0;
+imu_msg.linear_acceleration_covariance[2] = 0;
+imu_msg.linear_acceleration_covariance[3] = 0;
+imu_msg.linear_acceleration_covariance[4] = 0.04;
+imu_msg.linear_acceleration_covariance[5] = 0;
+imu_msg.linear_acceleration_covariance[6] = 0;
+imu_msg.linear_acceleration_covariance[7] = 0;
+imu_msg.linear_acceleration_covariance[8] = 0.04;
+
+imu_msg.orientation_covariance[0] = 0.0025;
+imu_msg.orientation_covariance[1] = 0;
+imu_msg.orientation_covariance[2] = 0;
+imu_msg.orientation_covariance[3] = 0;
+imu_msg.orientation_covariance[4] = 0.0025;
+imu_msg.orientation_covariance[5] = 0;
+imu_msg.orientation_covariance[6] = 0;
+imu_msg.orientation_covariance[7] = 0;
+imu_msg.orientation_covariance[8] = 0.0025;
+```
+
 [TODO: covariances used]
 
