@@ -83,5 +83,8 @@ imu_msg.orientation_covariance[7] = 0;
 imu_msg.orientation_covariance[8] = 0.0025;
 ```
 
+---
 
+|![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
+|----|----|
 

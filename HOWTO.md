@@ -130,3 +130,8 @@ Tune these manually, until the program `measure_thresholds` does not produce any
 #### Disable Modem Manager
 
 ModemManager service that is default on ubuntu, probes the newly added serial ports, which keeps it busy for few second. To overcome this delay turn off or uninstall the ModemManager service.
+
+---
+
+|![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
+|----|----|
