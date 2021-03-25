@@ -83,20 +83,20 @@ rostopic hz /imu/data
 rqt_plot /imu/data/linear_acceleration
 ```
 
-![linear acceleration plot](../img/linear_acceleration.png)
+![linear acceleration plot](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/linear_acceleration.png)
 
 
 ```
 rqt_plot /imu/data/angular_velocity
 ```
 
-![angular velocity plot](../img/angular_velocity.png)
+![angular velocity plot](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/angular_velocity.png)
 
 ```
 rqt_plot /imu/mag/magnetic_field
 ```
 
-![magnetic field plot](../img/magnetic_field.png)
+![magnetic field plot](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/magnetic_field.png)
 
 #### Measure Gravity
 
