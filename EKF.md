@@ -44,9 +44,7 @@ Add the following to your robots launch file. Basically the following statement 
 
 The EKF filter with the configuration above listens for odometry and imu data, and fuses them together to obtained filtered odometry.
 
-Filtered odometry is output at `/odometry/filtered`
-
-Any goal controller or move base should listen to `/odometry/filtered` for making calculations. 
+Filtered odometry is output at `/odometry/filtered` Any goal controller or move base should listen to `/odometry/filtered` for making calculations. 
 
 The goal controller provided with `rosrider_diff_drive` looks for the `goal_controller_odom_topic` to listen for during operation. Launching the provided files with `robot_ekf.launch` will start with the robot, goal controller listening to `/odometry/filtered`
 
@@ -94,7 +92,7 @@ Most of these instructions were made possible by:
 
 - [preparing sensor data](http://docs.ros.org/en/melodic/api/robot_localization/html/preparing_sensor_data.html)
 
-### License
+#### Licenses
 
 |![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
 |----|----|

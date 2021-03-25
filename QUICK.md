@@ -93,7 +93,7 @@ If you connected successfully to the device, Press `CTRL-C` to stop, and this ti
 
 ![rviz](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/rviz.png)
 
----
+#### Licenses
 
 |![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
 |----|----|

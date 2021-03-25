@@ -70,7 +70,7 @@ _Charles Tsai_ and user _cb1_mobile_ from e2e.ti.com forums, for help on debuggi
 
 _Melih Karakelle_ for advice on the development of the circuit.
 
----
+#### Licenses
 
 |![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
 |----|----|
