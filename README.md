@@ -59,8 +59,7 @@ During normal operation, if ROS connection is active, red led will turn on faint
 
 If the device is at steady state, then green led will turn on faintly, indicating that the device is on stationary state.
 
-
-#### Credits
+**Credits**
 
 _Roberto G. Valenti_ for writing the original complementary filter.
 
@@ -70,10 +69,11 @@ _Charles Tsai_ and user _cb1_mobile_ from e2e.ti.com forums, for help on debuggi
 
 _Melih Karakelle_ for advice on the development of the circuit.
 
-#### Licenses
+**Licenses**
 
 |![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
-|----|----|
+|----|----|  
+
 
 
 

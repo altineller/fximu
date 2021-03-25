@@ -92,8 +92,9 @@ Most of these instructions were made possible by:
 
 - [preparing sensor data](http://docs.ros.org/en/melodic/api/robot_localization/html/preparing_sensor_data.html)
 
-#### Licenses
+**Licenses**
 
 |![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
-|----|----|
+|----|----|  
+
 
