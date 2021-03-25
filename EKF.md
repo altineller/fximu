@@ -30,22 +30,25 @@ Configuration file for `robot_localization` package is available at: [ekf_templa
 
 ### Launching
 
+Add the following to your robots launch file. Basically the following statement launches  `robot_localization`, with the `ekf_template.yaml` file as configuration.
+
 ```
 <launch>
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se" clear_params="true">
     <rosparam command="load" file="$(find rosrider)/config/ekf_template.yaml" />
   </node>
 </launch>
-
 ```
 
 ### Filtered Odometry
 
-TODO: explain input output
+The EKF filter with the configuration above listens for odometry and imu data, and fuses them together to obtained filtered odometry.
 
-TODO: explain using /odometry/filtered
+Filtered odometry is output at `/odometry/filtered`
 
-TODO: explain how you need to rewire the goal controller with this.
+Any goal controller or move base should listen to `/odometry/filtered` for making calculations. 
+
+The goal controller provided with `rosrider_diff_drive` looks for the `goal_controller_odom_topic` to listen for during operation. Launching the provided files with `robot_ekf.launch` will start with the robot, goal controller listening to `/odometry/filtered`
 
 #### Covariances
 
@@ -83,7 +86,15 @@ imu_msg.orientation_covariance[7] = 0;
 imu_msg.orientation_covariance[8] = 0.0025;
 ```
 
----
+#### References
+
+Most of these instructions were made possible by: 
+
+- [ros sensor fusion tutorial](https://github.com/methylDragon/ros-sensor-fusion-tutorial)
+
+- [preparing sensor data](http://docs.ros.org/en/melodic/api/robot_localization/html/preparing_sensor_data.html)
+
+### License
 
 |![tr000003](https://raw.githubusercontent.com/rosrider/fximu_doc/main/img/TR000003.png)   |![license](https://raw.githubusercontent.com/ROSRider/fximu_doc/main/img/license.png)|
 |----|----|
