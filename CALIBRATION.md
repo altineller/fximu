@@ -1,3 +1,5 @@
+### Calibration
+
 When the `calibration_mode` is set to `1` in the fximu_params.yaml file, the unit outputs raw sensor values at `/imu/raw` topic.
 
 The complementary filter is not initialized, and the hard iron and soft iron corrections are not processed, but device is configured according to `sensor_read_rate`, `output_rate_divider`, `gfsr`, and `afsr`on the yaml file.
