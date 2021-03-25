@@ -8,17 +8,19 @@ FXIMU utilizes a port of ROS's complementary filter on the TM4C123 MCU using the
 
 #### Documentation Contents
 
-See [QUICKSTART](QUICK.md) for instructions on how to start the device.
+- [QUICKSTART](QUICK.md) for instructions on how to start the device
 
-See [PARAMETERS](PARAMS.md) for description of parameters.
+- [PARAMETERS](PARAMS.md) for description of parameters
 
-See [CALIBRATION](CALIBRATION.md) for instructions on calibration. The device comes calibrated, but once you mount it to your application, you might need to recalibrate it.
+- [CALIBRATION](CALIBRATION.md) for instructions on calibration. The device comes calibrated, but once you mount it to your application, you might need to recalibrate it.
 
-See [HOWTO](HOWTO.md) on tips on operation.
+- [HOWTO](HOWTO.md) on tips on operation
 
-The firmware code is available at https://github.com/altineller/fximu_firmware
+- [EKF](EKF.md) about using FXIMU with `robot_localization` package
 
-The hardware files are available at https://github.com/altineller/fximu_hardware
+- The firmware code is available at https://github.com/altineller/fximu_firmware
+
+- The hardware files are available at https://github.com/altineller/fximu_hardware
 
 #### Features
 
