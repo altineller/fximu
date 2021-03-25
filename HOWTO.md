@@ -80,14 +80,23 @@ rostopic hz /imu/data
 #### Plot IMU data
 
 ```
-rqt_plot /imu/data/?
+rqt_plot /imu/data/linear_acceleration
 ```
 
-#### Plot Magnetometer data
+![linear acceleration plot](../img/linear_acceleration.png)
+
 
 ```
-rqt_plot /imu/mag/?
+rqt_plot /imu/data/angular_velocity
 ```
+
+![angular velocity plot](../img/angular_velocity.png)
+
+```
+rqt_plot /imu/mag/magnetic_field
+```
+
+![magnetic field plot](../img/magnetic_field.png)
 
 #### Measure Gravity
 
@@ -125,7 +134,6 @@ self.kDeltaAngularVelocityThreshold = 0.033
 `kDeltaAngularVelocityThreshold` is the threshold for the derivative of gyro values.
 
 Tune these manually, until the program `measure_thresholds` does not produce any output.
-
 
 #### Disable Modem Manager
 
