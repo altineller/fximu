@@ -7,6 +7,8 @@ sudo apt install ros-noetic-rviz-imu-plugin -y
 sudo apt install socat -y  
 ```
 
+> Due to a bug in rosserial\_phyton in ROS noetic, the device does not disconnect properly, instead it times out, and disconnects after 20 second. The bug in rosserial\_phyton has been fixed, and will be distributed with the next ros update, but until then, if you are using noetic use the latest version of SerialClient.py from [roserial_python](https://github.com/ros-drivers/rosserial/blob/noetic-devel/rosserial_python/src/rosserial_python/SerialClient.py)
+
 #### FXIMU package
 
 FXIMU does not need a driver, or additional software to connect to ROS, however launch and configuration files are presented in a package for convenience to the user. 
