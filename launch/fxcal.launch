@@ -3,8 +3,11 @@
     <arg name="serial_port" default="/dev/ttyACM0"/>
     <arg name="serial_baud" default="230400"/>
 
-    <rosparam command="load" file="$(find fximu)/config/fximu_params.yaml" />
-    <rosparam command="load" file="$(find fximu)/config/fximu_params_00B.yaml" />
+    <param name="/params/imu/calibration_mode" type="int" value="1" />
+    <param name="/params/imu/gfsr" type="int" value="0" />
+    <param name="/params/imu/afsr" type="int" value="2" />
+    <param name="/params/imu/sensor_read_rate" type="int" value="100" />
+    <param name="/params/imu/output_rate_divider" type="int" value="2" />
 
     <node pkg="rosserial_python" type="serial_node.py" name="serial_node_fximu" output="screen">
         <param name="port" value="$(arg serial_port)"/>

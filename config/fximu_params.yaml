@@ -1,11 +1,16 @@
 params/imu: {
-calibration_mode: 0,
-sensor_read_rate: 100, output_rate_divider: 2,
-adaptive_gain: 1, bias_estimation: 1,
-gain_acc: 0.02, gain_mag: 0.01, bias_alpha: 0.1,
-imu_frame_id: "base_imu_link", mag_frame_id: "mag_imu_link",
-gfsr: 2, afsr: 1,
-steady_limit: 32,
+calibration_mode: 2,
+gain_acc: 0.02,
+gain_mag: 0.005,
+bias_alpha: 0.1,
+sensor_read_rate: 100,
+output_rate_divider: 2,
+adaptive_gain: true,
+bias_estimation: true,
+gfsr: 0,
+afsr: 2,
 world_frame: 0,
-use_mag: 1
+use_mag: true,
+imu_frame_id: "imu_link",
+mag_frame_id: "imu_link"
 }

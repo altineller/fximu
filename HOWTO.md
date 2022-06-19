@@ -52,7 +52,7 @@ Restart the computer. You will see that once the FXIMU is attached, the udev wil
 #### Run static transform publisher for rviz
 
 ```
-rosrun tf static_transform_publisher 0.0 0.0 0.0 0.0 0.0 0.0 map base_imu_link 100 
+rosrun tf static_transform_publisher 0.0 0.0 0.0 0.0 0.0 0.0 map imu_link 100 
 ```
 
 #### Visualize with RVIZ

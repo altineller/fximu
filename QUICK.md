@@ -74,8 +74,8 @@ process[serial_node_fximu-2]: started with pid [1652]
 [INFO] [1614953637.925089]: gain_acc: 0.020
 [INFO] [1614953637.929318]: gain_mag: 0.010
 [INFO] [1614953637.934133]: bias_alpha: 0.100
-[INFO] [1614953637.939420]: imu_frame_id: base_imu_link
-[INFO] [1614953637.943528]: mag_frame_id: base_mag_link
+[INFO] [1614953637.939420]: imu_frame_id: imu_link
+[INFO] [1614953637.943528]: mag_frame_id: imu_link
 [INFO] [1614953637.953971]: GFSR: 2
 [INFO] [1614953637.958144]: AFSR: 1
 [INFO] [1614953637.962534]: steady_limit: 32

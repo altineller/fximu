@@ -1,7 +1,0 @@
-<launch>
-    <rosparam command="load" file="$(find fximu)/config/fximu_params.yaml" />
-    <rosparam command="load" file="$(find fximu)/config/fximu_params_000.yaml" />
-    <include file="$(find fximu)/launch/fx.launch">
-        <arg name="serial_device" value="/dev/ttyACM0"/>
-    </include>
-</launch>

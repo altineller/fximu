@@ -83,7 +83,7 @@ See [CALIBRATION.md](CALIBRATION.md) for details.
 | 2    | GFSR\_500PS
 | 3    | GFSR\_250PS
 
-Default is `GFSR_500PS`
+Default is `GFSR_2000PS`
 
 #### AFSR
 
@@ -93,8 +93,9 @@ Default is `GFSR_500PS`
 | 1    | AFSR\_4G
 | 2    | AFSR\_8G
 
-Default is `AFSR_4G`
+Default is `AFSR_8G`
 
+// TODO: the below statement needs to be corrected.
 **For a ground based planar robot, use `GFSR_250PS` for gyro, and `AFSR_8G` for accelerometer.**
 
 **Licenses**

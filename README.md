@@ -35,11 +35,11 @@ Here is example parameters file:
 ```
 params/imu: {
 calibration_mode: 0,
-sensor_read_rate: 400, output_rate_divider: 8,
+sensor_read_rate: 100, output_rate_divider: 2,
 adaptive_gain: 1, bias_estimation: 1,
 gain_acc: 0.02, gain_mag: 0.01, bias_alpha: 0.1,
-imu_frame_id: "base_imu_link", mag_frame_id: "mag_imu_link",
-gfsr: 2, afsr: 1,
+imu_frame_id: "imu_link", mag_frame_id: "imu_link",
+gfsr: 0, afsr: 2,
 steady_limit: 32,
 world_frame: 0,
 use_mag: 1,
