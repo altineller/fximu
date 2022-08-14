@@ -1,0 +1,11 @@
+params/imu: {
+kAngularVelocityThreshold: 0.01,
+kAccelerationThreshold: 0.07,
+kSteadyGravity: 9.564,
+kDeltaAngularVelocityThreshold: 0.01,
+mag_offset_x: -19.04, mag_offset_y: -39.22, mag_offset_z: -55.37,
+mag_soft_iron_ix: 0.984, mag_soft_iron_iy: -0.043, mag_soft_iron_iz: -0.039,
+mag_soft_iron_jx: -0.043, mag_soft_iron_jy: 0.978, mag_soft_iron_jz: 0.046,
+mag_soft_iron_kx: -0.039, mag_soft_iron_ky: 0.046, mag_soft_iron_kz: 1.044,
+gyro_bias_x: 0.015, gyro_bias_y: 0.007, gyro_bias_z: 0.002
+}
